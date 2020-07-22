@@ -1,0 +1,112 @@
+body {
+    margin: 0; 
+    font-family: 'Righteous', cursive;   
+}
+
+.content {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.frame {
+    flex: 4;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.menu {
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    box-shadow: -20px 20px deeppink;
+    box-sizing: border-box;
+    background-color: pink;
+    margin: 10px 10px 24px;
+    padding: 10px;
+}
+
+.menu h1 {
+    font-size: 54px;
+    color: crimson;
+    text-shadow: 2px 2px black;
+}
+
+.color-menu {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+}
+
+.color-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.color {
+    height: 45px;
+    width: 45px;
+}
+
+.range-menu {
+    padding-top:30px;
+}
+
+.button-menu {
+    padding-top:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clear {
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+
+/* Styling Input Range */
+/* Reference: https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ */
+
+/* Removing Original Style */
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+} 
+input[type=range]:focus {
+    outline: none;
+} 
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer; 
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+}
+
+/* Styling the Thumb */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 45px;
+    width: 45px;
+    background: whitesmoke;
+    cursor: pointer;
+  }
+
+/* Styling the Track */
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+    background: gray;
+  }
